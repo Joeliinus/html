@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Finantssektor</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://d3dbg39zl8ph6r.cloudfront.net/uploads/2023/10/SWED-A.ST-e1492133.png" rel="icon"
+          type="image/x-icon">
+    <style>
+        #volgnikeTabel {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        #volgnikeTabel th, #volgnikeTabel td {
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #volgnikeTabel th {
+            background-color: #c0392b;
+            color: white;
+        }
+
+        .aplausiNupp {
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            font-size: 14;
+            font-weight: bold;
+        }
+
+
+
+    </style>
+</head>
+
+<body class="style"
+      style="background-image: url('https://img.freepik.com/free-vector/gradient-monochromatic-abstract-background_23-2149133889.jpg'); background-size: 40% 80%">
+
+<nav style="font-size: 21px">
+    <a href="https://d3dbg39zl8ph6r.cloudfront.net/uploads/2023/10/SWED-A.ST-e1492133.png">Ikoon</a> |
+    <a href="https://img.freepik.com/free-vector/gradient-monochromatic-abstract-background_23-2149133889.jpg">Taust</a>
+    |
+    <a href="https://static1.bigstockphoto.com/9/0/4/large2/409792600.jpg">Edupoodium</a> |
+    <a href="https://www.shutterstock.com/image-illustration/three-men-podium-loser-land-260nw-70381051.jpg">Poodiumipilt</a>
+    |
+    <a href="https://www.brainyquote.com/authors/jeff-bezos-quotes">Tsitaat</a> |
+    <a href="https://annestiil.delfi.ee/artikkel/84358589/13-kasulikku-nouannet-kuidas-oma-rahaasjad-kontrolli-alla-saada">Artikkel</a>
+</nav>
+
+<main class="main">
+    <h1 style="color:white; font-family:verdana"><em>Võlad ja võlgnikud</em></h1>
+    <picture>
+        <source media="(min-width: 2000px)" srcset="https://static1.bigstockphoto.com/9/0/4/large2/409792600.jpg">
+        <source media="(max-width: 650px)" srcset="https://static1.bigstockphoto.com/9/0/4/large2/409792600.jpg">
+        <img alt="Võlgnikud poodiumil" height="250"
+             src="https://www.shutterstock.com/image-illustration/three-men-podium-loser-land-260nw-70381051.jpg"
+             usemap="#workmap"
+             width="250">
+    </picture>
+    <map name="workmap">
+        <area alt="Võlgnikud poodiumil" coords="1, 1, 400, 400"
+              href="https://www.shutterstock.com/fi/image-illustration/three-men-podium-loser-land-70381051"
+              shape="rect">
+    </map>
+    <h3 style="margin-left: 35px; text-align: left; font-size: 28px">Selle aasta nominendid on:</h3>
+    <menu style="text-align: left; font-size: 21px">
+        <li>Lea</li>
+        <li>Rulko</li>
+        <li>Bob</li>
+        <li>Peep</li>
+        <li>Mirko</li>
+        <li>Linda</li>
+        <li>Bobby</li>
+    </menu>
+    <P style="color:brown; font-size:160%"><b> Esiteks soovime tunnustada <br> meie võlgnike 2024 aasta edetabelisse
+        pääsenud inimesi!
+    </b></P>
+    <audio id="aplaus" preload="auto" src="aplaus.mp3"></audio>
+    <table id="volgnikeTabel">
+        <caption><b>Selle aata suurimad võlgnikud!</b></caption>
+        <colgroup>
+            <col span="3" style="background-color: white">
+            <col span="1" style="background-color: darkgreen">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>Kohad</th>
+            <th>Võlgnik</th>
+            <th>Võlg (EUR)</th>
+            <th>Eemaldamine</th>
+        </tr>
+        </thead>
+        <tbody id="volgnikeKonteiner">
+        <tr>
+            <td><b>1.</b></td>
+            <td>Bob</td>
+            <td>3780</td>
+            <td>
+                <button class="aplausiNupp" onclick="document.getElementById('aplaus').play();">APLAUS</button>
+            </td>
+        </tr>
+        <tr>
+            <td><b>2.</b></td>
+            <td>Peep</td>
+            <td>2017</td>
+            <td>
+                <button class="aplausiNupp" onclick="document.getElementById('aplaus').play();">APLAUS</button>
+            </td>
+        </tr>
+        <tr>
+            <td><b>3.</b></td>
+            <td>Rulko</td>
+            <td>1789</td>
+            <td>
+                <button class="aplausiNupp" onclick="document.getElementById('aplaus').play();">APLAUS</button>
+            </td>
+        </tr>
+        <tr>
+            <td><b>4.</b></td>
+            <td>Linda</td>
+            <td>1564</td>
+            <td>
+                <button class="aplausiNupp" onclick="document.getElementById('aplaus').play();">APLAUS</button>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td style="background-color:darkorange; color:gold">Suurimad õnnesoovid teile!</td>
+        </tr>
+        </tfoot>
+    </table>
+    <table style="border: 2px solid black; border-collapse: collapse; background-color: white; margin:auto">
+        <thead>
+        <tr style="background-color: #c9692b; color: darkgreen">
+            <th style="border: 2px solid black"><p style="margin: 15px; text-align: left"><b>Tabelisse kahjuks
+                mittepääsenud</b></p></th>
+            <th style="border: 2px solid black"><p style="margin: 15px; text-align: left"><b>Veel mõned auväärt
+                nimetused</b></p></th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black">
+                <ol start="5" style="text-align: left">
+                    <li>Bobby</li>
+                    <li>Lea</li>
+                    <li>Mirko</li>
+                </ol>
+            </td>
+            <td>
+                <ul style="list-style-type:circle; text-align: left">
+                    <li>Pablo</li>
+                    <li>Rebeka</li>
+                    <li>Karl</li>
+                </ul>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    <p style="color:black; background-color:white; font-size:200%;" title='Käitu rahaga mõistlikult'>
+        Kui leiate end meie edetabelist,
+        siis palume<span style="color:darkred"> esimesel võimalusel </span><br>
+        <a href="https://www.swedbank.com">meiega</a> ühendust
+        võtta ja oma võlg ära maksta!</p>
+</main>
+
+<hr>
+<section>
+    <h4 style="color:brown; font-size:200%">Käituge
+        <del>vastutustundetult</del>
+        <ins> mõistlikult!</ins>
+    </h4>
+    <p style="color:brown; font-size:150%"><b>Me ikkagi oleme <abbr title="Swedbank AS"> Eesti mainekaim pank</abbr>,
+        mis
+        toetab <code>inimeste, ettevõtete ja ühiskonna</code> arengut.</b></p>
+</section>
+
+<blockquote cite="https://www.brainyquote.com/authors/jeff-bezos-quotes"
+            style="color:gold; background-color:darkred; width:475px; margin:auto">
+    <h4 style="padding:5px">Siin on tsitaat BQ leheküljelt:</h4>What consumerism really is, at its worst is getting
+    people to buy things that <strong>don't actually improve their lives.</strong>
+    <div style="padding:5px"> -Jeff Bezos</div>
+</blockquote>
+
+<!--Võlavärss-->
+<pre style="color:white"><mark style="color: white; background-color: black">
+Linda võta end käsile!
+
+Rulko ära maga!
+
+Peep see räägib mesiselt.
+
+Bob sul võlad taga!
+</mark></pre>
+
+<hr>
+
+<details>
+    <summary>Lugemissoovitus</summary>
+    <p>Kui soovite algtasemel õptetust rahaasjade ja panganduse kohta, siis lugege <i>Denisa Prošková</i> raamatut
+        <cite>Käi oma
+            rahaga mõistlikult ümber.</cite> Ilmumisaeg:2018.</p>
+</details>
+
+<dialog open style="padding: 5px">"Käi oma rahaga mõistlikult ümber"</dialog>
+<br><br>
+
+<hr>
+
+<iframe height="500"
+        src="https://annestiil.delfi.ee/artikkel/84358589/13-kasulikku-nouannet-kuidas-oma-rahaasjad-kontrolli-alla-saada"
+        title="Rahaasjade kordasaamise nipid" width="1000"></iframe>
+
+<hr>
+
+<h3 style="font-size: 28px"><u>Väike tagasiside saamise küsitlus, et osaleda loosis</u></h3>
+
+<form style="font-size: 21px">
+    <label for="aeg"><u><b>Tegemise kuupäev:</b></u></label>
+    <input id="aeg" max="2024-12-31" min="2024-12-01" name="tegemise_päev" type="date" value="2024-12-01"/>
+    <label for="tegemised"><u><b>Varasem tegemiste arv:</b></u></label>
+    <input id="tegemised" max="10" min="0" name="tegemised" type="number"/>
+</form>
+
+<br>
+
+<p style="font-size: 21px"><u>Sisestage enda andmed</u></P>
+
+<form action="/ID_leht.php">
+    <fieldset style="border: 2px groove; width: 500px; margin:auto">
+        <legend>Andmesisestus:</legend>
+        <label for="enimi">Eesnimi:</label>
+        <input id="enimi" name="enimi" type="text"><br><br>
+        <label for="pnimi">Perenimi:</label>
+        <input id="pnimi" name="pnimi" type="text"><br><br>
+        <label for="gmail">Sisesta oma gmail:</label>
+        <input id="gmail" pattern=".+@gmail\.com" required size="30" type="email"/><br><br>
+        <input type="submit" value="Edasta">
+    </fieldset>
+</form>
+
+<p style="font-size: 21px"><u>Kas sulle meeldib meie <sup>igaaastane</sup> võgnike edetabel?</u></p>
+
+<form style="font-size: 21px">
+    <input id="jah" name="edetabeli_arvamus" type="radio" value="JAH">
+    <label for="jah">Jah</label><br>
+    <input id="ei" name="edetabeli_arvamus" type="radio" value="EI">
+    <label for="ei">Ei</label><br>
+    <input id="nii ja naa" name="edetabeli_arvamus" type="radio" value="KUMBAGI">
+    <label for="nii ja naa">Nii ja naa</label><br>
+    <input id="vastamisvastane" name="edetabeli_arvamus" type="radio" value="EISOOVIVASTATA">
+    <label for="vastamisvastane">Ei soovi vastata</label>
+</form>
+
+<p style="font-size: 21px"><u>Inimiseks olemise kontroll <sub>(Vali linnud)</sub></u></p>
+
+<form>
+    <input id="olend1" name="olend1" type="checkbox" value="Nastik">
+    <label for="olend1"> Nastik</label><br>
+    <input id="olend2" name="olend2" type="checkbox" value="Leevike">
+    <label for="olend2"> Leevike</label><br>
+    <input id="olend3" name="olend3" type="checkbox" value="Rohutirts">
+    <label for="olend3"> Rohutirts</label><br>
+    <input id="olend4" name="olend4" type="checkbox" value="Rohukonn">
+    <label for="olend4"> Rohukonn</label><br>
+    <input id="olend5" name="olend5" type="checkbox" value="Öökull">
+    <label for="olend5"> Öökull</label>
+</form>
+
+<br>
+<form action="/ID_leht.php">
+    <label for="raha">Milline on teie majandulik olukord 1 kuu kohta:</label>
+    <select id="raha" name="raha">
+        <optgroup label="Hea">
+            <option value="5000">jääb > 5000(€) vaba raha üle</option>
+            <option value="3500">jääb > 2000(€) vaba raha üle</option>
+        </optgroup>
+        <optgroup label="Rahuldav">
+            <option value="2000">jjääb < 2000(€) vaba raha üle</option>
+            <option value="500">jääb > 500(€) vaba raha üle</option>
+            <option value="250">jääb > 100(€) vaba raha üle</option>
+        </optgroup>
+        <optgroup label="Halb">
+            <option value="100">jääb < 100(€) vaba raha üle</option>
+            <option value="0">jääb 0(€) vaba raha üle</option>
+            <option value="-100">tekib < 100(€) võlga</option>
+            <option value="-250">tekib > 100(€) võlga</option>
+            <option value="-500">tekib > 500(€) võlga</option>
+        </optgroup>
+    </select><br><br>
+    <input type="submit" value="Valitud">
+</form>
+<br>
+
+<p><small>Vajadusel vajuta, <b><kbd>Ctrl</kbd> + <kbd>R</kbd></b> et lehekülge värskendada.</small>></p>
+
+<p><samp>Sisestasid midagi valesti?<br>Vajuta Ctrl+R, et otsast alustada.</samp></p>
+
+<br>
+
+<form>
+    <input class="aplausiNupp" onclick="document.getElementById('aplaus').play()" type="button" value="TEHTUD">
+</form>
+
+<hr>
+
+<video controls height="400" width="600">
+    <source src="võlavideo.mp4" type="video/mp4">
+</video>
+<br>
+<audio controls>
+    <source src="videoaudio.mp3" type="audio/mp3">
+</audio>
+
+<hr>
+
+<article>
+    <header>
+        <h2>Swedbank</h2>
+        <p>Eesti mainekaim pank</p>
+    </header>
+    <p>Swedbank on suurim pank Eestis, mille on oma finantspartneriks valinud <em>üle 960 000 era- ning 130 000
+        ärikliendi.</em><br>
+        Pakume laia valikut finantsteenuseid, nende seas <em>arvelduskontod, hüpoteegid, kindlustus, krediitkaardid,
+            laenud,
+            pensionid ja investeeringud</em> nii eraklientidele kui ka ettevõtetele. <br>Meie eesmärk on aidata kaasa
+        sellele, et
+        inimeste ja
+        ettevõtete rahaasjad oleksid pikaajaliselt korras. Järgime kõigis oma tegevustes kolme väärtust: <em>oleme
+            avatud,
+            lihtsad ja hoolivad.</em></p>
+</article>
+
+<hr>
+
+<!--Tegija
+andmed-->
+<address style="color:darkgreen">
+    <b>Tehtud Martin Riive poolt.</b><br>
+    Külasta meie panka:<br>
+    swedbank.com<br>
+    Tallinna 7, Viljandi, 71020 Viljandi maakond<br>
+    Eesti
+</address>
+
+<canvas id="taustavarvid">
+    Your browser does not support the canvas tag.
+</canvas>
+
+<script>
+const c = document.getElementById("taustavarvid");
+const ctx = c.getContext("2d");
+ctx.fillStyle = "orange";
+ctx.fillRect(20, 50, 75, 75);
+ctx.fillStyle = "darkorange";
+ctx.fillRect(120, 50, 75, 75);
+ctx.fillStyle = "white";
+ctx.fillRect(220, 50, 75, 75);
+
+</script>
+
+<figure>
+    <img alt="Swedbank Logo" src="https://d3dbg39zl8ph6r.cloudfront.net/uploads/2023/10/SWED-A.ST-e1492133.png"
+         style="width:25%">
+    <figcaption>Logo - Swedbank, Puu, 1820.</figcaption>
+</figure>
+
+<br>
+
+<footer>
+    <p>Author: Martin Riive</p>
+    <p><a href="kirjutage: martinriive@gmail.com">martinriive@gmail.com</a></p>
+</footer>
+
+<svg height="200" width="600">
+    <defs>
+        <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+            <stop offset="75%" style="stop-color:rgb(255,69,0);stop-opacity:1"/>
+        </linearGradient>
+    </defs>
+    <ellipse cx="300" cy="100" fill="url(#grad1)" rx="250" ry="85" style="stroke:rgb(200,75,25);stroke-width:5"/>
+    <text fill="rgb(200,75,25)" font-family="Verdana" font-size="75" x="115" y="125">Swedbank</text>
+</svg>
+<br>
+
+<p>Küsitlus on avatud iga päev
+    <time>00:00</time>
+    kuni
+    <time>24:00</time>
+    kuni aasta lõpuni.
+</p>
+<p>Valmimisaeg:
+    <time datetime="2024-11-30 20:00">30. November</time>
+    .
+</p>
+
+<textarea cols="100" id="swedbank" name="swedbankAsutus" rows="5" style="font-size:18px">
+Swedbank AB on Rootsi päritolu rahvusvaheline panganduskontsern, mille peakontor asub Stockholmis.
+Ettevõte on noteeritud OMX Põhjamaade börsil Stockholmis osas Large Cap.
+Swedbank kontserni president ja tegevjuht oli Birgitte Bonnesen.
+2019. aastast juhib Swedbanki Jens Henriksson.
+</textarea>
+<br>
+
+<button onclick="showContent()" style="background-color:green; color:white; padding:10px; font-size:18px">Genereeri
+    raha
+</button>
+<template>
+    <h2 style="color:purple">Raha(€)</h2>
+    <img height="300" src="https://i.ebayimg.com/images/g/dJoAAOSw9N1Vg2cj/s-l1200.jpg" width="500">
+</template>
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+
+</script>
+
+</body>
+
+</html>
