@@ -35,11 +35,9 @@
             color: white;
             padding: 5px;
             margin: 5px;
-            font-size: 14;
+            font-size: 14px;
             font-weight: bold;
         }
-
-
 
 
     </style>
@@ -70,7 +68,7 @@
              width="250">
     </picture>
     <map name="workmap">
-        <area alt="Võlgnikud poodiumil" coords="1, 1, 400, 400"
+        <area alt="Võlgnikud poodiumil" coords="1,1,400,400"
               href="https://www.shutterstock.com/fi/image-illustration/three-men-podium-loser-land-70381051"
               shape="rect">
     </map>
@@ -138,7 +136,7 @@
         </tbody>
         <tfoot>
         <tr>
-            <td style="background-color:darkorange; color:gold">Suurimad õnnesoovid teile!</td>
+            <td colspan="4" style="background-color:darkorange; color:gold">Suurimad õnnesoovid teile!</td>
         </tr>
         </tfoot>
     </table>
@@ -257,8 +255,8 @@ Bob sul võlad taga!
     <label for="jah">Jah</label><br>
     <input id="ei" name="edetabeli_arvamus" type="radio" value="EI">
     <label for="ei">Ei</label><br>
-    <input id="nii ja naa" name="edetabeli_arvamus" type="radio" value="KUMBAGI">
-    <label for="nii ja naa">Nii ja naa</label><br>
+    <input id="niijanaa" name="edetabeli_arvamus" type="radio" value="KUMBAGI">
+    <label for="niijanaa">Nii ja naa</label><br>
     <input id="vastamisvastane" name="edetabeli_arvamus" type="radio" value="EISOOVIVASTATA">
     <label for="vastamisvastane">Ei soovi vastata</label>
 </form>
@@ -287,14 +285,14 @@ Bob sul võlad taga!
             <option value="3500">jääb > 2000(€) vaba raha üle</option>
         </optgroup>
         <optgroup label="Rahuldav">
-            <option value="2000">jjääb < 2000(€) vaba raha üle</option>
+            <option value="2000">jjääb &lt; 2000(€) vaba raha üle</option>
             <option value="500">jääb > 500(€) vaba raha üle</option>
             <option value="250">jääb > 100(€) vaba raha üle</option>
         </optgroup>
         <optgroup label="Halb">
-            <option value="100">jääb < 100(€) vaba raha üle</option>
+            <option value="100">jääb &lt; 100(€) vaba raha üle</option>
             <option value="0">jääb 0(€) vaba raha üle</option>
-            <option value="-100">tekib < 100(€) võlga</option>
+            <option value="-100">tekib &lt; 100(€) võlga</option>
             <option value="-250">tekib > 100(€) võlga</option>
             <option value="-500">tekib > 500(€) võlga</option>
         </optgroup>
@@ -381,7 +379,7 @@ ctx.fillRect(220, 50, 75, 75);
 
 <footer>
     <p>Author: Martin Riive</p>
-    <p><a href="kirjutage: martinriive@gmail.com">martinriive@gmail.com</a></p>
+    <p><a href="kirjutage:martinriive@gmail.com">martinriive@gmail.com</a></p>
 </footer>
 
 <svg height="200" width="600">
@@ -399,7 +397,7 @@ ctx.fillRect(220, 50, 75, 75);
 <p>Küsitlus on avatud iga päev
     <time>00:00</time>
     kuni
-    <time>24:00</time>
+    <time>23:59</time>
     kuni aasta lõpuni.
 </p>
 <p>Valmimisaeg:
